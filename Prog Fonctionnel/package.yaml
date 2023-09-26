@@ -1,0 +1,25 @@
+name: my-haskell-project
+version: 0.1.0.0
+dependencies:
+  - base >= 4.7 && < 5
+  - text
+  - aeson
+  - lens
+  - conduit
+  - bytestring
+  - mtl
+  - random
+  - containers
+  - time
+  - HUnit
+  - QuickCheck
+executables:
+  my-executable:
+    main: Main.hs
+    source-dirs: app
+  my-test-suite:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - HUnit
+      - QuickCheck
